@@ -10,15 +10,6 @@ public:
                 nums[TempIndex]=nums[byIndex];
                 TempIndex++;
             }
-            else
-            {
-                
-            }
-            
-            // else
-            // {
-               
-            // }
             
        }
        for(int byIndexCount=TempIndex;byIndexCount<wArraysize;byIndexCount++)
