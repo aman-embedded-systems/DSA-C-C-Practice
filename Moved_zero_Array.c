@@ -5,21 +5,26 @@ public:
        int TempIndex=0;
        for(int byIndex=0;byIndex<wArraysize;byIndex++)
        {
-            if(nums[wArraysize]!=0)
+            if(nums[byIndex]!=0)
             {
-                nums[TempIndex]=nums[wArraysize];
-
+                nums[TempIndex]=nums[byIndex];
+                TempIndex++;
             }
             else
             {
-                TempIndex++;
+                
             }
             
+            // else
+            // {
+               
+            // }
+            
        }
-    //    for(int byIndexCount=wArraysize-TempIndex;byIndexCount<wArraysize;byIndexCount++)
-    //    {
-    //         nums[byIndexCount]=0;
-    //    }
+       for(int byIndexCount=TempIndex;byIndexCount<wArraysize;byIndexCount++)
+       {
+            nums[byIndexCount]=0;
+       }
         
     }
 };
